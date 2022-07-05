@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This plugin is for the interface to the ShipperHQ platform, the most intelligent rating platform in the world, trusted by 000's of customers.
+This plugin is for the interface to the ShipperHQ platform, the most intelligent rating platform in the world, trusted by 1000's of customers.
 
 The Woocommerce integration supports:
 
@@ -46,7 +46,7 @@ Firstly sign up for a trial account at [ShipperHQ.com](https://www.ShipperHQ.com
 
 Configure ShipperHQ for your needs. See our [Getting Started Video](http://docs.shipperhq.com/getting-started/) for further information.
 
-1. Download the zip file in the zips directory and extract into wp-content/plugins/
+1. Download the release into wp-content/plugins/
 2. In WordPress activate the Plugin ShipperHQ
 3. Navigate to WooCommerce/Settings/Shipping/ShipperHQ
 4. Enter api key/authentication code as taken from the ShipperHQ Dashboard
@@ -77,5 +77,4 @@ ShipperHQ itself has support for other capabilities that we do not yet have inte
 * Store Pickup
 * Address Validation
 * Split Amazon Style Checkout
-
 
