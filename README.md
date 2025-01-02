@@ -1,80 +1,105 @@
-# WooCommerce Plugin for ShipperHQ
+# ShipperHQ for WooCommerce
 
-## Introduction
+ShipperHQ is the ultimate solution for advanced shipping rate management and checkout customization in WooCommerce. With ShipperHQ, you can optimize your shipping strategy, integrate with multiple carriers, and provide a seamless checkout experience for your customers.
 
-This plugin is for the interface to the ShipperHQ platform, the most intelligent rating platform in the world, trusted by 1000's of customers.
+---
 
-The Woocommerce integration supports:
+## Features
 
-* Support for over 50 Carriers (see list below)
-* Advanced Rules Engine with support for shipping promotions, discounts, surcharges, prevent conditions, etc
-* Shipping via Multi-Origin/Multi-Vendor
-* Nearest Warehouse/Fewest Warehouse Algorithms
-* Intelligent Dimensional Packing
-* Estimated Time in Transit
-* Custom Table Rates with ability to change rates down to a Product level
-* Dynamic Address Type lookup
-* Rate Shopping - show only the cheapest rates
-* and much more
+- **Real-Time Shipping Rates**: Display accurate shipping rates at checkout based on product details, customer location, and shipping preferences.
+- **Carrier Integration**: Support for major carriers like UPS, FedEx, USPS, DHL, and custom/local carriers.
+- **Custom Shipping Rules**: Set rules for free shipping thresholds, surcharges, restricted zones, and more.
+- **Multi-Origin Shipping**: Handle shipments from multiple warehouses or drop shippers.
+- **Pickup & Delivery Options**: Offer in-store pickup, curbside delivery, and date-specific delivery services.
+- **Advanced Packaging**: Use smart packaging algorithms to optimize shipping costs.
+- **Customizable Checkout**: Tailor the shipping options displayed during checkout for a better customer experience.
 
-Carriers supported include:
-
-* UPS
-* FedEx
-* USPS
-* DHL
-* Fastway
-* Australia Post
-* StarTrack
-* YRC/Yellow Freight
-* Canada Post
-* Old Dominion
-* Con-way
-* Echo
-* Estes
-* Cerasis
-* Gso
-* and yours (contact us to discuss)
-
-We also have the most advanced custom table rate solution in the world. This technology installed on tens of thousands of Magento sites worldwide.
-
-
+---
 
 ## Installation
 
-Firstly sign up for a trial account at [ShipperHQ.com](https://www.ShipperHQ.com). You will need this to obtain your api key/authentication code.
+1. **Download the Plugin**: Download the plugin from the zips folder in this repository. Ensure you download the latest version.
 
-Configure ShipperHQ for your needs. See our [Getting Started Video](http://docs.shipperhq.com/getting-started/) for further information.
+2. **Upload the Plugin**:
+    - Log in to your WooCommerce WordPress admin dashboard.
+    - Go to `Plugins > Add New` and click `Upload Plugin`.
+    - Upload the `.zip` file of the plugin and click `Install Now`.
 
-1. Download the release into wp-content/plugins/
-2. In WordPress activate the Plugin ShipperHQ
-3. Navigate to WooCommerce/Settings/Shipping/ShipperHQ
-4. Enter api key/authentication code as taken from the ShipperHQ Dashboard
+3. **Activate the Plugin**:
+    - After installation, click `Activate Plugin` to enable ShipperHQ in your WooCommerce store.
 
-You should now be able to see shipping rates from ShipperHQ on the frontend.  
+4. **Configure ShipperHQ**:
+    - Navigate to `WooCommerce > Settings > Shipping > ShipperHQ`.
+    - Enter your ShipperHQ API credentials and configure your settings as needed.
 
+---
 
+## Requirements
 
-##  Product Setup
+- WordPress 5.0+
+- WooCommerce 5.0+
+- A valid ShipperHQ account. [Sign up here](https://shipperhq.com/).
 
-Once the plugin is installed you will a ShipperHQ tab when you edit a product listing. In this you can enter the attributes which will affect the shipping rating, depending on your needs.
+---
 
-In brief they are:
+## Configuration
 
-* **Shipping Group** - Similar to Shipping Class in WooCommerce, this specifies a category of products, E.g. BIKES, BEDS, ACCESSORIES, etc. A product can be assigned multiple shipping groups
-* **Warehouse** - The set of Warehouses the product is available to be shipped from. If not set the default warehouse setup in ShipperHQ is used
-* **Dimensional Rule Group** - Similar to Shipping Groups, but used to segment your dimensional rules. E.g. you may have a group called RODS and then you would use this to set the possible boxes for fishing rods in ShipperHQ. A product can only belong to one Dimensional Rule Group
-* **Ships Separately** - Check this if the product ships in its own box
-* **Freight Class** - The LTL Freight Class. Only applies if you are shipping via LTL and the product doesn't use the default freight class assigned to the carrier.
-* **Must Ship Freight** - Used with LTL only. If set will force the cart to ship via LTL Freight depending on rules setup in ShipperHQ.
+1. **API Credentials**:
+    - Log in to your ShipperHQ account.
+    - Navigate to `API Keys` under `Account Settings` and copy your API key.
+    - Paste the key into the plugin settings under `WooCommerce > Settings > Shipping > ShipperHQ`.
 
+2. **Shipping Rules**:
+    - Configure shipping rules, methods, and carriers in your ShipperHQ dashboard.
+    - These settings will sync with your WooCommerce store.
 
-## Coming Soon
+3. **Test Your Checkout**:
+    - Add a product to the cart and proceed to checkout to verify shipping rates and options.
 
-ShipperHQ itself has support for other capabilities that we do not yet have integrated in WooCommerce. If you are interested in these please contact us to discuss:
+---
 
-* Calendar Based Rate Selection
-* Store Pickup
-* Address Validation
-* Split Amazon Style Checkout
+## Frequently Asked Questions
 
+### 1. Do I need a ShipperHQ account to use this plugin?
+Yes, an active ShipperHQ account is required to use this plugin.
+
+### 2. How do I troubleshoot issues with shipping rates?
+- Verify your API credentials in the plugin settings.
+- Ensure the shipping rules and methods are correctly configured in your ShipperHQ dashboard.
+- Check for plugin conflicts by disabling other shipping-related plugins temporarily.
+- Check our extensive [documentation](https://docs.shipperhq.com/category/troubleshooting/) for troubleshooting tips.
+
+### 3. Can I customize shipping options for specific products?
+Yes, you can configure product-specific rules in your ShipperHQ dashboard. Take a look at our [extensive examples](https://docs.shipperhq.com/category/examples/) guide for some ideas of what ShipperHQ can do for you.
+
+---
+
+## Support
+
+For assistance, please visit our [Help Center](https://docs.shipperhq.com/) or contact ShipperHQ support at [support@shipperhq.com](mailto:support@shipperhq.com).
+
+For alternative contact methods, please visit our [Contact Us](https://shipperhq.com/contact/) page.
+
+---
+
+## Contributing
+
+We welcome contributions to improve this plugin! To contribute:
+
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature-name`.
+3. Make your changes and add them to the staging area: `git add .`.
+4. Commit your changes: `git commit -m 'Add feature'`.
+5. Push to the branch: `git push origin feature-name`.
+6. Submit a pull request.
+
+---
+
+## License
+
+See license files
+
+---
+
+## Copyright
+Copyright (c) 2015 Zowta LLC (http://www.ShipperHQ.com)
